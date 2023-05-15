@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.werp</groupId>
-	<artifactId>bankApp</artifactId>
+	<artifactId>bank-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>bankApp</name>
 	<description>Demo project for Spring Boot</description>
@@ -39,6 +39,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.47</version>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
