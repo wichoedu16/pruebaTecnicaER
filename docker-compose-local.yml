@@ -31,6 +31,7 @@ services:
     image: mysql:8.0
     networks:
       - internal-network
+    #command: --init-file /data/application/init.sql
     environment:
       - MYSQL_ROOT_PASSWORD=pruebas1
       - MYSQL_USER=user
@@ -38,6 +39,7 @@ services:
       - MYSQL_DATABASE=app_bank
     volumes:
       - './data:/var/lib/mysql'
+      - .docker/setup.sql:/bankApp/bdd/BaseDatos.sql
 volumes:
   data:
 networks:
